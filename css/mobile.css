@@ -118,4 +118,36 @@ main {
 footer {
     grid-area: footer;
     z-index: 4;
+    /* background-color: palevioletred; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer a {
+    /* background-color: #333; */
+    cursor: pointer;
+}
+
+.fa-facebook-f, .fa-twitter, .fa-instagram {
+    color: white;
+    border: solid 1.5px white;
+    border-radius: 50%;
+}
+
+.fa-facebook-f {
+    padding: 8px 13px;
+    font-size: 2.0rem;
+    margin-right: 15px;
+}
+
+.fa-twitter {
+    padding: 8px 10px;
+    font-size: 2.0rem;
+    margin-right: 15px;
+}
+
+.fa-instagram {
+    padding: 8px 10px;
+    font-size: 2.0rem;
 }
