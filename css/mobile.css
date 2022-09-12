@@ -12,25 +12,30 @@ body {
     background-color: #674baf;
     display: grid;
     justify-content: center;
-    grid-template-columns: minmax(320px, 400px);
-    grid-template-rows: 70px 600px 90px;
+    grid-template-columns: minmax(320px, 450px);
+    grid-template-rows: minmax(100px, auto) minmax(580px, auto) minmax(130px, auto);
     grid-template-areas: 
         "header"
          "main"
         "footer";
 }
 
+
+/* ---------------------- BACKGROUND IMAGE ----------------------- */
+
 .background-image {
     position: absolute;
-    /* background-color: darkkhaki; */
     width: 100%;
-    height: 430px;
+    height: 382px;
     background-image: url('../assets/bg-mobile.svg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     z-index: 1;
 }
+
+
+/* --------------------------- HEADER ---------------------------- */
 
 header {
     grid-area: header;
@@ -42,7 +47,6 @@ header {
 .header-figure {
     display: flex;
     align-items: center;
-    /* background-color: coral; */
     width: 120px;
     min-height: 20px;
     margin-left: 35px;
@@ -53,6 +57,8 @@ header {
 }
 
 
+/* ----------------------------- MAIN ----------------------------- */
+
 main {
     grid-area: main;
     z-index: 3;
@@ -60,14 +66,12 @@ main {
 
 .main-section1 {
     width: 100%;
-    /* background-color: coral; */
     padding: 0 35px;
     margin-top: 30px;
 }
 
 .main-section1 .main-section1__mockups {
     width: 100%;
-    /* background-color: palevioletred; */
 }
 
 .main-section1 .main-section1__mockups img {
@@ -75,11 +79,10 @@ main {
 }
 
 .main-section2 {
-    /* background-color: orchid; */
     display: flex;
     flex-direction: column;
     padding: 0 35px;
-    margin-top: 30px;
+    margin-top: 60px;
 }
 
 .main-section2 h1 {
@@ -96,7 +99,7 @@ main {
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
     font-size: 1.6rem;
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 .main-section2 button {
@@ -107,7 +110,7 @@ main {
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
     font-size: 1.4rem;
-    margin-top: 30px;
+    margin: 30px 0 30px;
     padding: 10px 0;
     border-radius: 20px;
     border: none;
@@ -115,17 +118,17 @@ main {
 }
 
 
+/* --------------------------- FOOTER ---------------------------- */
+
 footer {
     grid-area: footer;
     z-index: 4;
-    /* background-color: palevioletred; */
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 footer a {
-    /* background-color: #333; */
     cursor: pointer;
 }
 
@@ -136,18 +139,17 @@ footer a {
 }
 
 .fa-facebook-f {
-    padding: 8px 13px;
-    font-size: 2.0rem;
-    margin-right: 15px;
+    padding: 8px 11px;
+    font-size: 1.8rem;
 }
 
 .fa-twitter {
-    padding: 8px 10px;
-    font-size: 2.0rem;
-    margin-right: 15px;
+    padding: 8px 9px;
+    font-size: 1.8rem;
+    margin: 0 15px;
 }
 
 .fa-instagram {
-    padding: 8px 10px;
+    padding: 6px 8px;
     font-size: 2.0rem;
 }
