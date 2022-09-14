@@ -125,6 +125,19 @@ main {
     border-radius: 20px;
     border: none;
     box-shadow: 0 4px 6px 0 #3e52a3;
+    cursor: pointer;
+    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+
+.main-section2 button:hover {
+    background-color: #00252e;
+    color: white;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.main-section2 button:active {
+    background-color: #00252e;
+    color: white;
 }
 
 
@@ -146,6 +159,7 @@ footer a {
     color: white;
     border: solid 1.5px white;
     border-radius: 50%;
+    transition: color 0.5s ease-in-out, border-color 0.5s ease-in-out;
 }
 
 .fa-facebook-f {
@@ -162,4 +176,15 @@ footer a {
 .fa-instagram {
     padding: 6px 8px;
     font-size: 2.0rem;
+}
+
+.fa-facebook-f:hover, .fa-twitter:hover, .fa-instagram:hover {
+    color: #00252e;
+    border-color: #00252e;
+    transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+
+.fa-facebook-f:active, .fa-twitter:active, .fa-instagram:active {
+    color: #00252e;
+    border-color: #00252e;
 }
