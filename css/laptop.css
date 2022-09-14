@@ -1,0 +1,66 @@
+body {
+    width: 100%;
+    min-width: 100vh;
+    grid-template-columns: minmax(800px, 1300px);
+    grid-template-rows: minmax(150px, auto) minmax(370px, auto) minmax(115px, auto);
+    background-image: url('../assets/bg-desktop.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* ---------------------- BACKGROUND IMAGE ----------------------- */
+
+.background-image {
+    width: none;
+    height: none;
+    background: none;
+}
+
+
+/* ------------------------------ HEADER ----------------------------------- */
+
+.header-figure {
+    width: 210px;
+}
+
+
+/* -------------------------------- MAIN ------------------------------------*/
+
+main {
+    display: grid;
+    grid-template-columns: minmax(450px, 790px) minmax(350px, 510px);
+}
+
+.main-section1 {
+    width: 100%;
+    padding: 0 35px;
+    margin-top: 30px;
+}
+
+.main-section2 {
+    margin-top: 30px;
+}
+
+.main-section2 h1 {
+    font-size: 3.4rem;
+    text-align: start;
+}
+
+.main-section2 p {
+    text-align: start;
+}
+
+.main-section2 button {
+    width: 180px;
+    align-self: flex-start;
+}
+
+
+/* ------------------------- FOOTER ------------------------ */
+
+footer {
+    justify-content: flex-end;
+    padding-right: 35px;
+}

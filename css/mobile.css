@@ -20,6 +20,16 @@ body {
         "footer";
 }
 
+body::-webkit-scrollbar {
+    background-color: #674baf;
+    width: 7px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #8b4ec6;
+    border-radius: 20px;
+}
+
 
 /* ---------------------- BACKGROUND IMAGE ----------------------- */
 
